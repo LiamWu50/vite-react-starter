@@ -23,7 +23,7 @@ export default defineConfig(({ command, mode }) => {
       port: env.VITE_PORT, // 端口
       open: false, // 自动打开浏览器
       cors: true, // 跨域设置允许
-      strictPort: true, // 如果端口已占用直接退出
+      strictPort: false, // 如果端口已占用直接退出
       // 接口代理
       proxy: {
         '/api': {
